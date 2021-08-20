@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'poppins-medium';
+  src: url('./assets/fonts/Poppins-Light.ttf');
+}
+
+html, body {
+  font-size: var(--fontSize-base-mobile);
+  box-sizing: border-box;
+  font-family: 'poppins-medium';
+  font-weight: 400;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}

@@ -23,7 +23,7 @@ const STYLES_OF_TYPE = {
     border: none;
     text-decoration: underline;
     font-size: var(--fontSize-sm);
-  `
+  `,
 }
 
 const setType = (type) => {
@@ -37,9 +37,7 @@ const setSize = (size) => {
 }
 
 const setInline = (isInline) => {
-  return isInline
-    ? 'width: max-content;'
-    : 'width: 100%;'
+  return isInline ? 'width: max-content;' : 'width: 100%;'
 }
 
 export const ButtonStyled = styled.button`
@@ -57,17 +55,17 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
 
   filter: brightness(1);
-  transition: filter .1s ease-in-out;
+  transition: filter 0.1s ease-in-out;
 
   ${({ type }) => setType(type)}
   ${({ size }) => setSize(size)}
   ${({ isInline }) => setInline(isInline)}
 
   &:hover {
-    filter: brightness(1.05)
+    filter: brightness(1.05);
   }
-  
+
   &:active {
-    filter: brightness(.9)
+    filter: brightness(0.9);
   }
 `

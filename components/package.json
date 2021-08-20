@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prettier:check": "prettier . --check",
+    "prettier:fix": "prettier . --write",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-cp": "node ./scripts/buildCustomProperties",
@@ -20,11 +22,13 @@
     "@storybook/react": "^6.3.6",
     "babel-loader": "^8.2.2",
     "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.24.0"
+    "eslint-plugin-react": "^7.24.0",
+    "prettier": "2.2.1"
   },
   "dependencies": {
     "@emotion/styled": "^10.0.27",

@@ -5,7 +5,7 @@ const choices = {
       secondary: '#fc8181',
       white: '#ffffff',
       dark: '#333333',
-      gray: '#CCCCCC'
+      gray: '#CCCCCC',
     },
 
     transparent: 'transparent',
@@ -19,7 +19,7 @@ const choices = {
       600: '#718096',
       700: '#4a5568',
       800: '#2d3748',
-      900: '#1a202c'
+      900: '#1a202c',
     },
     red: {
       100: '#fff5f5',
@@ -30,7 +30,7 @@ const choices = {
       600: '#e53e3e',
       700: '#c53030',
       800: '#9b2c2c',
-      900: '#742a2a'
+      900: '#742a2a',
     },
     orange: {
       100: '#fffaf0',
@@ -41,7 +41,7 @@ const choices = {
       600: '#dd6b20',
       700: '#c05621',
       800: '#9c4221',
-      900: '#7b341e'
+      900: '#7b341e',
     },
     yellow: {
       100: '#fffff0',
@@ -52,7 +52,7 @@ const choices = {
       600: '#d69e2e',
       700: '#b7791f',
       800: '#975a16',
-      900: '#744210'
+      900: '#744210',
     },
     green: {
       100: '#f0fff4',
@@ -63,7 +63,7 @@ const choices = {
       600: '#38a169',
       700: '#2f855a',
       800: '#276749',
-      900: '#22543d'
+      900: '#22543d',
     },
     teal: {
       100: '#e6fffa',
@@ -74,7 +74,7 @@ const choices = {
       600: '#319795',
       700: '#2c7a7b',
       800: '#285e61',
-      900: '#234e52'
+      900: '#234e52',
     },
     blue: {
       100: '#ebf8ff',
@@ -85,7 +85,7 @@ const choices = {
       600: '#3182ce',
       700: '#2b6cb0',
       800: '#2c5282',
-      900: '#2a4365'
+      900: '#2a4365',
     },
     indigo: {
       100: '#ebf4ff',
@@ -96,7 +96,7 @@ const choices = {
       600: '#5a67d8',
       700: '#4c51bf',
       800: '#434190',
-      900: '#3c366b'
+      900: '#3c366b',
     },
     purple: {
       100: '#faf5ff',
@@ -107,7 +107,7 @@ const choices = {
       600: '#805ad5',
       700: '#6b46c1',
       800: '#553c9a',
-      900: '#44337a'
+      900: '#44337a',
     },
     pink: {
       100: '#fff5f7',
@@ -118,8 +118,8 @@ const choices = {
       600: '#d53f8c',
       700: '#b83280',
       800: '#97266d',
-      900: '#702459'
-    }
+      900: '#702459',
+    },
   },
   spacing: {
     px: '1px',
@@ -140,7 +140,7 @@ const choices = {
     40: '10rem',
     48: '12rem',
     56: '14rem',
-    64: '16rem'
+    64: '16rem',
   },
   screens: {
     xs: '420px',
@@ -153,19 +153,19 @@ const choices = {
       sm: '639px',
       md: '767px',
       lg: '1023px',
-      xl: '1279px'
-    }
+      xl: '1279px',
+    },
   },
   fontFamily: {
     principal: ['poppins-medium', 'Roboto Slab', '"Times New Roman"', 'serif'],
     serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
     sans: ['Apercu', 'Arial', 'sans-serif'],
-    mono: ['"Roboto Mono"', 'Consolas', 'monospace']
+    mono: ['"Roboto Mono"', 'Consolas', 'monospace'],
   },
   fontSize: {
     base: {
       mobile: '16px',
-      desktop: '18px'
+      desktop: '18px',
     },
     xs: '.75rem',
     sm: '.875rem',
@@ -176,7 +176,7 @@ const choices = {
     '3xl': '1.875rem',
     '4xl': '2.25rem',
     '5xl': '3rem',
-    '6xl': '4rem'
+    '6xl': '4rem',
   },
   fontWeight: {
     hairline: 100,
@@ -187,7 +187,7 @@ const choices = {
     semibold: 600,
     bold: 700,
     extrabold: 800,
-    black: 900
+    black: 900,
   },
   lineHeight: {
     none: 1,
@@ -195,7 +195,7 @@ const choices = {
     snug: 1.375,
     normal: 1.5,
     relaxed: 1.625,
-    loose: 2
+    loose: 2,
   },
   letterSpacing: {
     tighter: '-.05em',
@@ -203,7 +203,7 @@ const choices = {
     normal: '0',
     wide: '.025em',
     wider: '.05em',
-    widest: '.1em'
+    widest: '.1em',
   },
   // prettier-ignore
   shadows: {
@@ -229,25 +229,25 @@ const choices = {
   minHeight: {
     0: '0',
     full: '100%',
-    screen: '100vh'
+    screen: '100vh',
   },
   minWidth: {
     0: '0',
-    full: '100%'
+    full: '100%',
   },
   opacity: {
     0: '0',
     25: '0.25',
     50: '0.5',
     75: '0.75',
-    100: '1'
+    100: '1',
   },
   borderRadius: {
     none: '0',
     sm: '0.125rem',
     md: '0.25rem',
     lg: '0.5rem',
-    full: '9999px'
+    full: '9999px',
   },
   zIndex: {
     auto: 'auto',
@@ -256,8 +256,8 @@ const choices = {
     20: '20',
     30: '30',
     40: '40',
-    50: '50'
-  }
+    50: '50',
+  },
 }
 
 const decisions = {
@@ -267,11 +267,11 @@ const decisions = {
     secondary: choices.colors.brand.secondary,
     fontLight: choices.colors.brand.white,
     fontBase: choices.colors.brand.primary,
-    fontBold: choices.colors.brand.dark
+    fontBold: choices.colors.brand.dark,
   },
   background: {
     primary: choices.colors.brand.primary,
-    secondary: choices.colors.brand.white
+    secondary: choices.colors.brand.white,
   },
   title: {
     fontFamily: choices.fontFamily.principal,
@@ -279,15 +279,15 @@ const decisions = {
     fontSize: {
       big: choices.fontSize['3xl'],
       medium: choices.fontSize.md,
-      small: choices.fontSize.sm
-    }
+      small: choices.fontSize.sm,
+    },
   },
   icon: {
     color: {
       white: choices.colors.brand.white,
-      green: choices.colors.brand.primary
-    }
-  }
+      green: choices.colors.brand.primary,
+    },
+  },
 }
 
 module.exports = { choices, decisions }

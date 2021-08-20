@@ -5,7 +5,7 @@ const TYPES = {
   text: 'text',
   email: 'email',
   password: 'password',
-  number: 'number'
+  number: 'number',
 }
 
 export const Input = ({ label, type, placeholder, isBig = false }) => {
@@ -26,5 +26,5 @@ Input.propTypes = {
   label: PropTypes.string,
   type: PropTypes.oneOf(Object.keys(TYPES)),
   placeholder: PropTypes.string,
-  isBig: PropTypes.bool
+  isBig: PropTypes.bool,
 }

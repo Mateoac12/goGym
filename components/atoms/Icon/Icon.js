@@ -11,5 +11,5 @@ export const Icon = ({ size, type }) => {
 
 Icon.propTypes = {
   size: PropTypes.string,
-  type: PropTypes.oneOf(Object.keys(ICON_LIST))
+  type: PropTypes.oneOf(Object.keys(ICON_LIST)),
 }

@@ -2,7 +2,7 @@ const ICON_PATH = 'icons'
 
 export const ICON_LIST = {
   menu: 'menu',
-  close: 'close'
+  close: 'close',
 }
 
 // TODO: excepcion en caso de que no encuentre el icon pasado por prop

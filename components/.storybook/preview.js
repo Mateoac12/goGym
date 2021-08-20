@@ -2,7 +2,7 @@ import '../tokens.css'
 import '../main.css'
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -20,6 +20,6 @@ export const parameters = {
         name: 'secondary',
         value: '#ffffff',
       },
-    ]
-  }
+    ],
+  },
 }

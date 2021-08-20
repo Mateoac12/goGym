@@ -11,10 +11,8 @@ const buildStyledStr = (object, parentCurr = []) => {
       ${buildStyledStr(valueCurr, parentCurr.concat(currObj))}`
     }
 
-    return (
-    `${prev}
+    return `${prev}
   --${parentCurr.join('-')}-${currObj}: ${valueCurr};`
-    )
   }, '')
 
   return stylesStr
@@ -23,10 +21,8 @@ const buildStyledStr = (object, parentCurr = []) => {
 const buildCustomProperties = () => {
   const choicesStr = buildStyledStr(choices)
 
-  const STYLE_STRUCTURE = (
-    `:root {${choicesStr}
+  const STYLE_STRUCTURE = `:root {${choicesStr}
 }`
-  )
 
   fs.writeFile('tokens.css', STYLE_STRUCTURE, 'utf8', (err) => {
     console.log(err)

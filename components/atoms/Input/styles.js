@@ -1,7 +1,9 @@
 import styled from '@emotion/styled'
 
 const setBigInput = (isBig) => {
-  return isBig && `
+  return (
+    isBig &&
+    `
     padding: 12px 45px;
     font-size: var(--fontSize-md);
     text-align: center;
@@ -14,6 +16,7 @@ const setBigInput = (isBig) => {
 
     -moz-appearance: textfield;
   `
+  )
 }
 
 export const FieldContainer = styled.div`
@@ -24,7 +27,7 @@ export const FieldContainer = styled.div`
 export const Label = styled.label`
   font-size: var(--fontSize-sm);
   margin: 10px 0;
-  `
+`
 
 export const InputBox = styled.input`
   padding: 8px 10px;
@@ -36,6 +39,6 @@ export const InputBox = styled.input`
   ${({ isBig }) => setBigInput(isBig)}
 
   &:focus {
-    border: 1px solid var(--colors-brand-primary)
+    border: 1px solid var(--colors-brand-primary);
   }
 `

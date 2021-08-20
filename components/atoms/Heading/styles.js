@@ -2,13 +2,13 @@ import styled from '@emotion/styled'
 
 const COLOR_STYLE = {
   primary: 'var(--colors-brand-primary)',
-  white: 'var(--colors-brand-white)'
+  white: 'var(--colors-brand-white)',
 }
 
 const SIZE_STYLE = {
   lg: 'var(--fontSize-3xl)',
   md: 'var(--fontSize-md)',
-  sm: 'var(--fontSize-sm)'
+  sm: 'var(--fontSize-sm)',
 }
 
 const setColor = (color) => {
@@ -21,5 +21,5 @@ const setFontSize = (size) => {
 
 export const Title = styled.h1`
   color: ${({ color }) => setColor(color)};
-  font-size: ${({ size }) => setFontSize(size)}
+  font-size: ${({ size }) => setFontSize(size)};
 `

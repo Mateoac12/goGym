@@ -5,23 +5,25 @@ export const TYPES = {
   primary: 'primary',
   primaryWhite: 'primary-white',
   secondary: 'secondary',
-  tertiary: 'tertiary'
+  tertiary: 'tertiary',
 }
 
 export const SIZES = {
   xs: 'xs',
   sm: 'sm',
   md: 'md',
-  lg: 'lg'
+  lg: 'lg',
 }
 
-export const Button = ({ children, label, type = TYPES.primary, size = SIZES.lg, isInline = false }) => {
+export const Button = ({
+  children,
+  label,
+  type = TYPES.primary,
+  size = SIZES.lg,
+  isInline = false,
+}) => {
   return (
-    <ButtonStyled
-      type={type}
-      size={size}
-      isInline={isInline}
-    >
+    <ButtonStyled type={type} size={size} isInline={isInline}>
       {label}
       {children}
     </ButtonStyled>
@@ -33,5 +35,5 @@ Button.propTypes = {
   type: PropTypes.oneOf(Object.values(TYPES)),
   size: PropTypes.oneOf(Object.values(SIZES)),
   isInline: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
 }
